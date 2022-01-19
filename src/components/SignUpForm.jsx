@@ -39,6 +39,7 @@ const SignUpForm = () => {
     <div className="wrapper">
       <div className="form">
         <h1 className="title">Chat Application</h1>
+        <h1>{error}</h1>
         <form onSubmit={handleSubmit}>
           <input
             type="text"
@@ -62,7 +63,6 @@ const SignUpForm = () => {
             </button>
           </div>
         </form>
-        <h1>{error}</h1>
       </div>
     </div>
   );

@@ -42,6 +42,15 @@ const Modal = () => {
     <div className="wrapper">
       <div className="form">
         <h1 className="title">Chat Application</h1>
+        <h3
+          align="center"
+          style={{
+            marginBottom: "30px",
+            color: "red",
+          }}
+        >
+          {error}
+        </h3>
         <form onSubmit={handleSubmit}>
           <input
             type="text"
@@ -66,13 +75,14 @@ const Modal = () => {
           </div>
         </form>
         <h1>
-          {error && (
-            <div align="center">
-              <button className="button" onClick={handleClick}>
-                SignUp
-              </button>
-            </div>
-          )}
+          <p style={{ color: "white" }} align="center">
+            OR
+          </p>
+          <div align="center">
+            <button className="button" onClick={handleClick}>
+              SignUp
+            </button>
+          </div>
         </h1>
       </div>
     </div>
